@@ -101,7 +101,7 @@ export default function App () {
               <>
                 <View style={styles.inputWrapper}>
                   <View style={styles.inputColumn}>
-                    <Text style={[styles.heading, {color: 'white'}]}>
+                    <Text style={styles.heading}>
                       Password Length
                     </Text>
                     {touched.passwordLength && errors.passwordLength && (
@@ -142,7 +142,7 @@ export default function App () {
                     disableBuiltInState
                     isChecked={numbers}
                     onPress={() => setNumbers(!numbers)}
-                    fillColor='#616C6F'
+                    fillColor='#74B9FF'
                   />
                 </View>
                 <View style={styles.inputWrapper}>
@@ -151,7 +151,7 @@ export default function App () {
                     disableBuiltInState
                     isChecked={symbols}
                     onPress={() => setSymbols(!symbols)}
-                    fillColor='#FC80A5'
+                    fillColor='#6ab04c'
                   />
                 </View>
 
@@ -209,12 +209,12 @@ const styles = StyleSheet.create({
   },
   heading: {
     color: 'white',
+    fontSize: 16,
   },
   errorText: {
     color: '#FF4848',
   },
   inputStyle: {
-    height: 40,
     width: 100,
     borderWidth: 1,
     borderColor: '#ccc',
